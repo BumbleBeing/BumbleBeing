@@ -282,6 +282,40 @@
 }
 
 /* ---------------------------------------------------------------------------
+ * Card rows inside a Post body.
+ *
+ * A game card is tall and narrow, so three of them at the prose measure would
+ * each be a banner with its own paragraph gap. One column on a phone, three
+ * across once there is room, and the typography plugin's image margins are
+ * cleared so the grid gap is the only spacing.
+ * ------------------------------------------------------------------------- */
+.card-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 1rem;
+	margin-block: 2rem;
+}
+
+.card-row img {
+	/* Capped while stacked so a phone does not get one card per screen. */
+	width: 100%;
+	max-width: 16rem;
+	height: auto;
+	margin: 0;
+}
+
+@media (min-width: 40rem) {
+	.card-row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.card-row img {
+		max-width: none;
+	}
+}
+
+/* ---------------------------------------------------------------------------
  * The hero headshot's drift.
  *
  * Two animations on two nested elements rather than one: 19s and 13s are

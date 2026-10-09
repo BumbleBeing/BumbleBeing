@@ -1,0 +1,170 @@
+---
+title: The Design of Multi-Task King
+blurb: How a board game about chasing dopamine got built, and what playtesters broke before it worked.
+date: 2026-10-09
+tags: [game]
+---
+
+Multi-Task King started life as a physical card game called Attentionality. The idea is this: you have one day, you have a limited amount of
+attention, and you are trying to wring as much enjoyment out of that day as you
+possibly can. The trouble is that the things most worth doing cost the most attention,
+and the cheap hits that cost almost nothing are worth almost nothing.
+
+## Two values per activity
+
+Every activity in the game carries a duration and a dopamine value. Duration represents how much attention an activity takes to choose, 
+and dopamine is what you score for choosing it. That's pretty much the whole
+economy. You start the game with a mere five attention, with a cap of ten, 
+which means a day is a short budget and you are constantly
+deciding whether to spend it on one big thing or four less impactful ones.
+
+If every card were just those two numbers, the game would be simple arithmetic. So most
+cards do something in addition to their raw stats.
+
+<div class="card-row">
+	<img
+		src="/multi-task-king/get-a-massage.webp"
+		alt="Get a Massage activity card: 4 duration, 1 dopamine, doubles the dopamine of every action taken this turn"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+	<img
+		src="/multi-task-king/go-shopping.webp"
+		alt="Go Shopping activity card: 4 duration, 1 dopamine, plus 3 dopamine if you have taken 3 or more actions this turn"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+	<img
+		src="/multi-task-king/spread-rumors.webp"
+		alt="Spread Rumors activity card: 3 duration, 1 dopamine, another player gets minus 2 dopamine"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+</div>
+
+Those three are representative of the kinds of cards in the deck. Get a Massage is a
+multiplier, worth almost nothing by itself and enormous if you build a turn around
+it. Go Shopping pays off only if you have already been busy, which rewards a plan
+you committed to several decisions ago. Spread Rumors does nothing for your own
+score and takes points off somebody else, which exists because a game where everyone
+optimizes in parallel is not really a game.
+
+There are a few other shapes in there. Effect cards can augment your attention at the end
+of the day instead of paying in points, so Eat Fast Food is cheap and immediate but
+leaves you with less ability tomorrow, and Meditate does the opposite, granting tons of attention at the cost of a lackluster turn. 
+Gifting cards like Cook a Meal hand something to the next player, which matters more than it
+seems it should.
+
+## Roles pull you in a direction
+
+At setup, each player picks a role out of three options, and the role usually pays a bonus
+whenever you do either of two specific activities.
+
+<div class="card-row">
+	<img
+		src="/multi-task-king/cinema-buff.webp"
+		alt="Cinema Buff role card: whenever you Watch a Film or Binge-Watch Shows, you get plus 3 dopamine"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+	<img
+		src="/multi-task-king/easygoer.webp"
+		alt="Easygoer role card: whenever you Daydream or Get a Massage, you get plus 2 attention"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+	<img
+		src="/multi-task-king/space-cadet.webp"
+		alt="Space Cadet role card: whenever you Smoke Up or Get Wasted, you get plus 2 attention"
+		width="600"
+		height="840"
+		loading="lazy"
+	/>
+</div>
+
+The two activities on a role are always thematically linked, which makes the card
+easy to read and gives you an identity at the table. Cinema Buff wants screen time
+and gets paid in points for it. Easygoer and Space Cadet both get paid in attention
+instead, which is a different kind of bonus: it doesn't score anything directly, 
+instead allowing for more explosive plays in the future.
+
+The important part is that your role is a suggestion, not a plan. Only six activity
+cards are face up at a time, so the thing your role loves may simply not be on the
+table, and you have to decide whether to wait for it or take what is there.
+
+## The penalty deck
+
+At the end of each day, one penalty card is drawn and it applies to everybody. Each
+one punishes a specific activity after the fact, so Brainrot docks you for every time
+you scrolled shorts that day, Ragebait does the same for checking socials, and
+One-Star does it for films. A couple of them target behavior rather than a specific
+card, with Burnout hitting anyone who took two or more actions and Ennui hitting
+anyone who took one or fewer.
+
+The penalty deck is one of the things that prevents the game from being solvable. You cannot
+plan around it, because you find out after you have already chosen the day's activities, and you
+are stuck weighing whether a third helping of the activity you are good at is worth
+the risk.
+
+Originally, this was the single most over-tuned part of the game. The first version hit hard
+enough that a bad draw could completely nullify a good day, and I got some pretty negative feedback
+about it. Knocking a couple of points off every penalty kept the tension without
+making luck of the draw feel like the whole game.
+
+## What playtesting actually changed
+
+The biggest and most recurring problem of the game was catching up to a runaway leader. 
+Usually whoever got ahead early tended to stay ahead, due to a lack of meaningful catch-up mechanics. 
+The fix was bandwagoning: if you take an action somebody already took this turn, you get a point for it and the person
+who went first gets two, with more for each additional player who piles on. It gives
+the trailing players a cheap way to stay close while making the leader's choices
+public information worth copying, and it quietly turned a solitaire scoring race into
+something you could strategize with each other during.
+
+A smaller fix that was in the same spirit: a player sitting at four or fewer attention can
+"sleep through the day", skipping their turn to get a whopping three attention back. Before that,
+running yourself dry almost always meant a dead turn or two.
+
+Playtesters also wanted the game to last longer and the deck to be less bland.
+Rounds went from eight to ten, and the proportion of vanilla cards, the ones with no
+text in the middle, came down in favor of cards that do something. One note I liked
+was the request for a clearer split between devious and wholesome ways of getting
+your dopamine, since Smoke Up and Call the Cops ought to feel different from Hit the
+Gym and Cook a Meal even when the numbers are comparable.
+
+## What the port changed
+
+Building the Godot version surfaced a different category of problem, which is that
+some cards were written in a way a person could follow but a computer could not,
+and a few of those turned out to be confusing for people too.
+
+Daydream originally gave you a point for every other one-point action you took. That
+is a rule that makes you check the value of each card, apply the bonus, and then
+wonder whether the bonus changed the value. I rewrote it to key off duration instead
+of dopamine, which is a number that never moves. Get a Massage got a similar
+treatment, going from doubling some of your actions to doubling all of them, with its
+own base value dropped to one so the card stayed in line.
+
+Drink Coffee is my favorite of these. It used to be an effect card that gave you
+attention back at the end of the day. Now it just costs two less duration. Those are
+the same thing from the player's side, and the second version needs no explanation
+and no end of day bookkeeping.
+
+A couple of changes were purely about overlap. Gamble Online and Eat Fast Food had
+drifted into being the same card with different art, so Gamble Online moved up in
+both cost and payoff to occupy a different slot. Drink Coffee went from two copies in
+the deck to four once it was clear how often you want it.
+
+## Where it stands
+
+The digital version isn't quite a full game right now, due to me still needing to implement 'attack' activities among other things.
+However, there *are* computer opponents included, and
+you can customize the deck before you start. You could download the raw files from the <a href="https://github.com/Monowog/Multi-Task-King">GitHub repo</a>, or 
+the executable from the <a href="https://www.bumblebeing.com/projects/multi-task-king">project page</a>. 
+What is left is mostly balance, which is the part that never really ends as it's beholden to my current design philosophy.
+
