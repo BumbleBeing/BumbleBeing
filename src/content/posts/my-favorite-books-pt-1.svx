@@ -10,7 +10,16 @@ answer ready, so here are three I keep going back to.
 
 ## The Pragmatic Programmer
 
-_Andy Hunt and Dave Thomas_
+<p class="book-author">Andy Hunt and Dave Thomas</p>
+
+<img
+	src="/books/the-pragmatic-programmer.webp"
+	alt="The Pragmatic Programmer, 20th anniversary edition cover"
+	width="440"
+	height="575"
+	loading="lazy"
+	class="book-cover"
+/>
 
 This one is about the job rather than any particular language. It's a pile of short
 essays on the stuff nobody teaches you directly: how to keep knowledge in one place
@@ -29,7 +38,16 @@ Takeaways:
 
 ## House of Leaves
 
-_Mark Danielewski_
+<p class="book-author">Mark Danielewski</p>
+
+<img
+	src="/books/house-of-leaves.webp"
+	alt="House of Leaves cover"
+	width="440"
+	height="594"
+	loading="lazy"
+	class="book-cover"
+/>
 
 A horror novel about a house that's bigger on the inside than the outside, except
 you never get that story directly. You get a dead man's academic manuscript about a
@@ -49,7 +67,16 @@ Takeaways:
 
 ## The Design of Everyday Things
 
-_Don Norman_
+<p class="book-author">Don Norman</p>
+
+<img
+	src="/books/the-design-of-everyday-things.webp"
+	alt="The Design of Everyday Things, revised and expanded edition cover"
+	width="440"
+	height="660"
+	loading="lazy"
+	class="book-cover"
+/>
 
 Norman's whole argument is that when someone pushes a door that needs pulling, that's
 not a dumb user, it's a bad door. He builds out a vocabulary for why: affordances for

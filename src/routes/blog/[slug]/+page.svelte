@@ -21,7 +21,7 @@
 		{/if}
 	</header>
 
-	<div class="prose max-w-none text-ink prose-headings:font-display">
+	<div class="post-body prose max-w-none text-ink prose-headings:font-display">
 		{#if Body}
 			<Body />
 		{/if}

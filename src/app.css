@@ -282,6 +282,44 @@
 }
 
 /* ---------------------------------------------------------------------------
+ * A single centered image inside a Post body, sized for a book cover.
+ *
+ * The typography plugin leaves images at the full measure, which is far wider
+ * than a cover wants to be, and gives them their own margins.
+ * ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+ * Post bodies.
+ *
+ * Section headings center the way a Post's own header does; the prose under
+ * them keeps its left edge. Scoped to .post-body rather than .prose, which a
+ * Project writeup also uses.
+ * ------------------------------------------------------------------------- */
+.post-body h2 {
+	text-align: center;
+}
+
+.book-author {
+	text-align: center;
+	/* Pulled up so it reads as a byline under the title rather than a paragraph
+	 * of its own. */
+	margin-top: -0.75rem;
+	font-style: italic;
+}
+
+.book-cover {
+	display: block;
+	width: 100%;
+	max-width: 13rem;
+	height: auto;
+	margin-inline: auto;
+	margin-block: 1.5rem;
+	border-radius: var(--radius-sm);
+	box-shadow:
+		0 1px 2px var(--shadow-contact),
+		0 4px 10px -2px var(--shadow-spread);
+}
+
+/* ---------------------------------------------------------------------------
  * Card rows inside a Post body.
  *
  * A game card is tall and narrow, so three of them at the prose measure would
