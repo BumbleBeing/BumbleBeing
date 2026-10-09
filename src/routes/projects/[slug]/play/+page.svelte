@@ -14,11 +14,7 @@
 
 <article class="flex flex-col gap-6">
 	<header class="flex flex-col items-center gap-3 text-center">
-		<h1 class="font-display text-3xl font-bold sm:text-4xl">Play {project.title}</h1>
-		<p class="max-w-prose text-ink-muted">
-			Runs in the browser, no download. Give it a moment on the first load: the build is about
-			45&nbsp;MB and it has to arrive before the game starts.
-		</p>
+		<h1 class="font-display text-3xl font-bold sm:text-4xl">{project.title}</h1>
 	</header>
 
 	<!--
