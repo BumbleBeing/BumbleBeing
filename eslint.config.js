@@ -10,6 +10,12 @@ const gitignorePath = path.resolve(import.meta.dirname, '.gitignore');
 
 export default defineConfig(
 	includeIgnoreFile(gitignorePath),
+	{
+		// Shipped as-is rather than authored here: the Godot web export brings its
+		// own engine JS, which fails these rules and must not be reformatted or it
+		// stops matching the .wasm it loads. Prettier already ignores /static/.
+		ignores: ['static/**']
+	},
 	js.configs.recommended,
 	ts.configs.recommended,
 	svelte.configs.recommended,

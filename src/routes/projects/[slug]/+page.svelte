@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { Button, Chip, ImageStrip, Seo } from '$lib/components';
 
 	let { data } = $props();
@@ -26,6 +27,18 @@
 		{/if}
 
 		<div class="flex flex-wrap items-center justify-center gap-3">
+			{#if project.play}
+				<!-- First, and the only primary button here: playing it beats reading
+					about it. Points at the child page rather than the build itself, so the
+					game arrives framed by the site instead of as a bare canvas. -->
+				<Button
+					variant="primary"
+					size="sm"
+					href={resolve('/projects/[slug]/play', { slug: project.slug })}
+				>
+					Play in browser
+				</Button>
+			{/if}
 			{#if project.repo}
 				<Button variant="outline" size="sm" href={project.repo}>Source</Button>
 			{:else}
