@@ -6,8 +6,8 @@
 	const sections = [
 		{ id: 'education', title: 'Education' },
 		{ id: 'experience', title: 'Experience' },
-		{ id: 'achievements', title: 'Achievements' },
-		{ id: 'hobbies', title: 'Hobbies' }
+		{ id: 'hobbies', title: 'Hobbies' },
+		{ id: 'fun-facts', title: 'Fun Facts' }
 	];
 </script>
 
@@ -27,6 +27,8 @@
 			{/each}
 		</nav>
 	</header>
+
+	<Separator />
 
 	<section id="education" class="flex scroll-mt-20 flex-col gap-3">
 		<h2 class="mb-3 text-center font-display text-2xl font-semibold underline underline-offset-4">
@@ -157,23 +159,6 @@
 
 	<Separator />
 
-	<section id="achievements" class="flex scroll-mt-20 flex-col gap-3">
-		<h2 class="mb-3 text-center font-display text-2xl font-semibold underline underline-offset-4">
-			Achievements
-		</h2>
-		<ul class="list-disc space-y-2 ps-5">
-			<li>Eagle Scout, Troop 36 in Danville, California.</li>
-			<li>
-				Competitive Magic: the Gathering player, with over $20,000 won in cash and product prizing.
-			</li>
-			<li>
-				Regular Red Cross blood donor, giving double red cell (2RBC) donations three times a year.
-			</li>
-		</ul>
-	</section>
-
-	<Separator />
-
 	<section id="hobbies" class="flex scroll-mt-20 flex-col gap-3">
 		<h2 class="mb-3 text-center font-display text-2xl font-semibold underline underline-offset-4">
 			Hobbies
@@ -189,5 +174,23 @@
 			Away from a keyboard I play bass guitar, draft a fair amount of Magic, and watch an
 			indefensible number of video essays.
 		</p>
+	</section>
+
+	<Separator />
+
+	<section id="fun-facts" class="flex scroll-mt-20 flex-col gap-3">
+		<h2 class="mb-3 text-center font-display text-2xl font-semibold underline underline-offset-4">
+			Fun Facts
+		</h2>
+		<ul class="list-disc space-y-2 ps-5">
+			<li>Eagle Scout, Troop 36 in Danville, California.</li>
+			<li>
+				Competitive Magic: the Gathering player, with over $20,000 won in lifetime cash and product
+				prizing.
+			</li>
+			<li>
+				Regular Red Cross blood donor, giving double red cell (2RBC) donations three times a year.
+			</li>
+		</ul>
 	</section>
 </div>

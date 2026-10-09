@@ -32,7 +32,10 @@
 		<p class="text-xs text-ink-muted italic">{project.credit}</p>
 	{/if}
 
-	<div class="mt-auto flex flex-wrap gap-2 pt-1">
+	<!-- No mt-auto: the chips follow the Blurb rather than being pushed to the
+		foot of the card, so a card beside a taller one does not strand its chips
+		at the bottom with a gap above them. -->
+	<div class="flex flex-wrap gap-2 pt-1">
 		{#each project.tags as tag (tag)}
 			<Chip {tag} label={tag} />
 		{/each}
