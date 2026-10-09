@@ -1,0 +1,69 @@
+---
+title: My Favorite Books pt. 1
+blurb: Short writeups of three books I keep recommending, and the bits of each one that actually stuck.
+date: 2026-10-04
+tags: [misc]
+---
+
+People ask what I'm reading more often than you might think, and I never have a good
+answer ready, so here are three I keep going back to.
+
+## The Pragmatic Programmer
+
+_Andy Hunt and Dave Thomas_
+
+This one is about the job rather than any particular language. It's a pile of short
+essays on the stuff nobody teaches you directly: how to keep knowledge in one place
+instead of five, how to write code you can still change in a year, when to prototype
+something cheap and throw it away, how to talk to the people you work with. The
+examples have aged, since the book came out in 1999 and there's a fair amount of
+Perl and CORBA in there, but the advice underneath has not. I reread chunks of it
+every couple of years and get something different each time.
+
+Takeaways:
+
+- Don't live with broken windows. The first ignored warning or hacky workaround is
+  permission for the next one, and then you're working in a codebase nobody respects/properly maintains.
+- Explain the bug out loud to someone, or to a rubber duck if nobody's around. Saying
+  it in order is usually enough to find it.
+
+## House of Leaves
+
+_Mark Danielewski_
+
+A horror novel about a house that's bigger on the inside than the outside, except
+you never get that story directly. You get a dead man's academic manuscript about a
+documentary that might not exist, annotated by a guy who is falling apart as he
+transcribes it, with his footnotes eating the page from below. The typography is
+doing real work here. Text spirals, runs backwards, gets stranded in a corner of an
+otherwise blank page, and the layout tightens up when the hallway does. It's the
+only book I've read where the physical object is part of the horror. It is also long
+and occasionally insufferable, and I love it.
+
+Takeaways:
+
+- How you lay something out is part of what it says. That goes for a novel and it
+  goes for an interface.
+- Nobody telling you the story is neutral. Worth remembering when you're reading
+  documentation written by whoever built the thing.
+
+## The Design of Everyday Things
+
+_Don Norman_
+
+Norman's whole argument is that when someone pushes a door that needs pulling, that's
+not a dumb user, it's a bad door. He builds out a vocabulary for why: affordances for
+what an object lets you do, signifiers for how it tells you, mapping for whether the
+controls match the thing they control, feedback for whether you can tell your action
+landed. Once you have the words, you can't stop noticing. I have opinions about
+microwave panels now. This is the book that turned "users keep getting this wrong"
+from a complaint into a bug report.
+
+Takeaways:
+
+- If people keep making the same mistake, the design is doing it to them. Fix the
+  design.
+- Make sure something visibly happens when a person acts. Silence reads as broken,
+  and they'll click it again.
+
+That's part one. I might do some others when I find the time.

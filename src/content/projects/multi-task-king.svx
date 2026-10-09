@@ -1,0 +1,37 @@
+---
+title: Multi-Task King
+blurb: A Godot 4 port of a board game I designed, where you spend a limited attention span chasing dopamine.
+tags: [game]
+tools: [Godot 4, GDScript, Game Design, Graphic Design, UI Design, AI Opponents]
+date: 2026-01-20
+repo: https://github.com/Monowog/Multi-Task-King
+---
+
+A digital port of a board game I designed about modern attention overload. Everyone
+at the table is trying to squeeze as much dopamine as possible out of a day, and the
+thing standing in your way is that you only have so much attention to spend.
+
+## How it plays
+
+Each player gets a role that says what they actually enjoy, so the same activity is
+worth more to one person than another and nobody is optimizing the same board. On
+your turn you pick from six face-up activity cards. Every activity carries a
+duration and a dopamine value, and the interesting part is that those two numbers
+rarely agree with each other. The cheap hit is right there and it is tempting, but
+the thing you would actually be glad you did costs most of what you have.
+
+That tension is the whole game. It is the same argument you have with yourself when
+you open your phone to check one thing.
+
+## The port
+
+The physical version came first, and the digital one exists because playtesting a
+board game by hand is slow. In Godot 4 I can change a card's numbers and have an
+answer in a minute instead of reprinting a deck.
+
+It is a full game loop at this point. There are computer opponents to play against,
+attention bars that respond as you spend down your turn, score tracking, a deck that
+reshuffles when it empties, effect cards on top of the plain activities, and the
+usual furniture of music, sound effects, and an options menu. It is all GDScript
+against Godot 4.5, and it is still a work in progress, mostly on the balance side
+where the card values are concerned.

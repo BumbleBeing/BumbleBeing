@@ -15,9 +15,7 @@
 			Deliberately not "everything I've built": the roster is curated, and the
 			index should not claim a completeness it does not have.
 		-->
-		<p class="max-w-prose text-ink-muted">
-			A few of the things I've built.
-		</p>
+		<p class="max-w-prose text-ink-muted">A few of the things I've built.</p>
 	</header>
 
 	{#if projects.length > 0}

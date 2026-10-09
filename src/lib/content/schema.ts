@@ -3,9 +3,10 @@ import { z } from 'zod';
 /**
  * The closed Tag set. Closed because every member needs a chip colour pair in
  * app.css — an open set means an unstyled chip and a typo silently splitting a
- * facet. `game` has no Projects yet and ships anyway (see ADR 0001).
+ * facet. `game` has no Projects yet and ships anyway (see ADR 0001); `misc` is
+ * carried by Posts only: a Project is always one of the four kinds of work.
  */
-export const TAGS = ['game', 'ml', 'systems', 'web'] as const;
+export const TAGS = ['game', 'misc', 'ml', 'systems', 'web'] as const;
 export type Tag = (typeof TAGS)[number];
 
 /**

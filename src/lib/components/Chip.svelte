@@ -13,6 +13,7 @@
 
 	// Written out rather than interpolated so Tailwind's scanner can see each class.
 	const tagClasses: Record<Tag, string> = {
+		misc: 'bg-chip-misc text-chip-misc-fg',
 		game: 'bg-chip-game text-chip-game-fg',
 		ml: 'bg-chip-ml text-chip-ml-fg',
 		systems: 'bg-chip-systems text-chip-systems-fg',

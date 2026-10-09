@@ -20,6 +20,7 @@ describe.each([
 	['chip: ml', '--chip-ml-ink', '--chip-ml-bg'],
 	['chip: systems', '--chip-systems-ink', '--chip-systems-bg'],
 	['chip: game', '--chip-game-ink', '--chip-game-bg'],
+	['chip: misc', '--chip-misc-ink', '--chip-misc-bg'],
 	['dark body text on background', '--cream', '--umber-900'],
 	['dark body text on surface', '--cream', '--umber-800'],
 	['dark muted text on background', '--warm-400', '--umber-900'],
@@ -28,6 +29,7 @@ describe.each([
 	['dark chip: ml', '--chip-ml-ink-dark', '--chip-ml-bg-dark'],
 	['dark chip: systems', '--chip-systems-ink-dark', '--chip-systems-bg-dark'],
 	['dark chip: game', '--chip-game-ink-dark', '--chip-game-bg-dark'],
+	['dark chip: misc', '--chip-misc-ink-dark', '--chip-misc-bg-dark'],
 	// Prose colours. These regressed once already: the typography plugin colours
 	// headings, inline code, links and table headers through its own variables,
 	// which default near-black and vanished in dark mode.

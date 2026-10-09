@@ -16,6 +16,7 @@
 	// Tinting by Tag is what separates BoosterTutor from Bone Fracture Detector:
 	// both are "B", and hue carries the information a letter cannot.
 	const tints: Record<Tag, string> = {
+		misc: 'text-chip-misc-fg [--tile-ink:var(--chip-misc-fg)] [--tile-ground:var(--chip-misc)]',
 		game: 'text-chip-game-fg [--tile-ink:var(--chip-game-fg)] [--tile-ground:var(--chip-game)]',
 		ml: 'text-chip-ml-fg [--tile-ink:var(--chip-ml-fg)] [--tile-ground:var(--chip-ml)]',
 		systems:

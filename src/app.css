@@ -63,6 +63,8 @@
 	--chip-systems-ink: oklch(0.42 0.1 262);
 	--chip-game-bg: oklch(0.95 0.032 340);
 	--chip-game-ink: oklch(0.43 0.12 345);
+	--chip-misc-bg: oklch(0.95 0.032 300);
+	--chip-misc-ink: oklch(0.43 0.115 305);
 
 	--chip-web-bg-dark: oklch(0.3 0.075 65);
 	--chip-web-ink-dark: oklch(0.88 0.1 88);
@@ -72,6 +74,8 @@
 	--chip-systems-ink-dark: oklch(0.87 0.07 255);
 	--chip-game-bg-dark: oklch(0.31 0.07 342);
 	--chip-game-ink-dark: oklch(0.89 0.08 345);
+	--chip-misc-bg-dark: oklch(0.3 0.065 302);
+	--chip-misc-ink-dark: oklch(0.88 0.08 300);
 }
 
 /* ---------------------------------------------------------------------------
@@ -110,6 +114,8 @@
 	--chip-systems-fg: var(--chip-systems-ink);
 	--chip-game: var(--chip-game-bg);
 	--chip-game-fg: var(--chip-game-ink);
+	--chip-misc: var(--chip-misc-bg);
+	--chip-misc-fg: var(--chip-misc-ink);
 
 	/* Shadows. Warm rather than neutral so the drop belongs to the palette, and
 	 * two layers (contact + spread) so the lift reads at any element size. */
@@ -152,6 +158,8 @@
 	--chip-systems-fg: var(--chip-systems-ink-dark);
 	--chip-game: var(--chip-game-bg-dark);
 	--chip-game-fg: var(--chip-game-ink-dark);
+	--chip-misc: var(--chip-misc-bg-dark);
+	--chip-misc-fg: var(--chip-misc-ink-dark);
 
 	/* A warm tint disappears against the umber ground; the dark theme needs a
 	 * near-black at a higher alpha to read as a shadow at all. */
@@ -186,6 +194,8 @@
 	--color-chip-systems-fg: var(--chip-systems-fg);
 	--color-chip-game: var(--chip-game);
 	--color-chip-game-fg: var(--chip-game-fg);
+	--color-chip-misc: var(--chip-misc);
+	--color-chip-misc-fg: var(--chip-misc-fg);
 
 	/* Fredoka carries the personality; body copy is system-ui and costs no
 	 * bytes. Galdeano is gone — it shipped a single 400 weight and v1 was

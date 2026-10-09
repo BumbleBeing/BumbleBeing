@@ -56,9 +56,9 @@ _Avoid_: Blog, journal, writing, news
 ### Classification
 
 **Tag**:
-One member of a closed set — `game`, `ml`, `systems`, `web` — naming the kind of
-work a Project is. Drives the colored chip on a Card. Closed because every member
-must have a color.
+One member of a closed set — `game`, `misc`, `ml`, `systems`, `web` — naming the
+kind of work a Project is, or the subject of a Post. Drives the colored chip on a
+Card. Closed because every member must have a color.
 _Avoid_: Category, type, kind, topic, label, collection
 
 **Tool**:
