@@ -288,13 +288,14 @@
  * than a cover wants to be, and gives them their own margins.
  * ------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------
- * Post bodies.
+ * Post and Writeup bodies.
  *
- * Section headings center the way a Post's own header does; the prose under
- * them keeps its left edge. Scoped to .post-body rather than .prose, which a
- * Project writeup also uses.
+ * Section headings center the way the page's own header does; the prose under
+ * them keeps its left edge. Named rather than hung on .prose so a future use
+ * of that container has to opt in.
  * ------------------------------------------------------------------------- */
-.post-body h2 {
+.post-body h2,
+.writeup-body h2 {
 	text-align: center;
 }
 

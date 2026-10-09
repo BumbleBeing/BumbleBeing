@@ -51,7 +51,7 @@
 		The body's first paragraph lands above the gallery on purpose: the page should
 		open with what the project is, not with an unlabelled screenshot.
 	-->
-	<div class="prose max-w-none text-ink prose-headings:font-display">
+	<div class="writeup-body prose max-w-none text-ink prose-headings:font-display">
 		{#if Body}
 			<Body />
 		{/if}
