@@ -44,6 +44,7 @@
 				</p>
 				<div class="flex flex-wrap justify-center gap-3 pt-2 sm:justify-start">
 					<Button variant="primary" href={resolve('/projects')}>View projects</Button>
+					<Button variant="primary" href={resolve('/about')}>Learn more</Button>
 					<Button variant="outline" href="/JacksonCmelakResume.pdf">Résumé</Button>
 				</div>
 			</div>
