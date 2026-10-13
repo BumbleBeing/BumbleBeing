@@ -1,0 +1,104 @@
+---
+title: My Favorite Books pt. 2
+blurb: Three more I keep recommending, this time on sitting still, writing clearly, and the rules nobody mentions.
+date: 2026-10-13
+tags: [misc]
+---
+
+The first one of these went over well enough that I kept a list going. Here are
+three more, and none of them are about software.
+
+## The Three Pillars of Zen
+
+<p class="book-author">Roshi Philip Kapleau</p>
+
+<img
+	src="/books/the-three-pillars-of-zen.webp"
+	alt="The Three Pillars of Zen, 35th anniversary edition cover"
+	width="440"
+	height="679"
+	loading="lazy"
+	class="book-cover"
+/>
+
+Kapleau was an American court reporter who covered the war crimes trials, went to
+Japan, and stayed thirteen years to train. The book he came back with is not a book
+about Zen so much as a set of primary documents. You get a teacher's lecture series
+on the actual mechanics of sitting, transcripts of private interviews between the
+teacher and his students, and then a long section of first-person accounts from
+people describing what happened to them. The interview transcripts are the part I
+keep returning to. A student arrives with a tidy intellectual account of what they
+have understood, and the teacher simply declines to accept it, over and over, until
+the student stops performing. It is the least mystical book about enlightenment I
+have read, which is why it works on me.
+
+Takeaways:
+
+- The posture instructions are not a warmup for the real thing, they are the thing.
+  A surprising amount of practice turns out to be logistics you were hoping to skip.
+- A clean explanation of an experience is not the experience. I notice this in code
+  reviews now, when someone describes a system beautifully and has clearly not run
+  it.
+
+## Writing with Style
+
+<p class="book-author">John R. Trimble</p>
+
+<img
+	src="/books/writing-with-style.webp"
+	alt="Writing with Style: Conversations on the Art of Writing cover"
+	width="440"
+	height="646"
+	loading="lazy"
+	class="book-cover"
+/>
+
+Short, blunt, and the only style guide I have ever finished. Trimble's premise is
+that most bad writing is not a grammar problem, it is a courtesy problem. The writer
+is busy expressing himself and has forgotten that a stranger has to follow this
+sentence by sentence with no idea where it is going. So the book is mostly about the
+reader: how to open without clearing your throat for a paragraph, how to carry
+someone across a transition, where to put the thing you most want them to remember.
+He also spends a cheerful chapter killing the rules you were taught and never
+questioned, like the one about prepositions at the end of a sentence. The advice
+holds up for commit messages and design docs, which is most of what I write.
+
+Takeaways:
+
+- Write the draft to find out what you think, then rewrite it for the person who has
+  to read it. Those are two different jobs and doing them at once produces neither.
+- If a sentence is hard to follow, that is your problem to fix, not the reader's
+  problem to push through.
+
+## 23 Things They Don't Tell You About Capitalism
+
+<p class="book-author">Ha-Joon Chang</p>
+
+<img
+	src="/books/23-things-about-capitalism.webp"
+	alt="23 Things They Don't Tell You About Capitalism cover"
+	width="440"
+	height="678"
+	loading="lazy"
+	class="book-cover"
+/>
+
+Twenty-three short chapters, each one opening with what you have been told and then
+taking it apart. Chang is a Cambridge economist and not remotely anti-capitalist,
+which is what makes the book land. He is arguing that the version of capitalism most
+people treat as the natural state of things is one design among several, assembled
+out of choices that were fought over and then forgotten. The opening chapter claims
+there is no such thing as a free market, and the argument is simply that every market
+already runs on rules you stopped noticing, like who is allowed to work and what may
+be sold at all. My favorite chapter argues the washing machine changed the world more
+than the internet did, and he is annoyingly convincing about it. You do not have to
+accept all twenty-three to come out of it reading economic claims more carefully.
+
+Takeaways:
+
+- When something looks like the absence of rules, it usually means the rules are old
+  enough that everyone stopped seeing them. Same is true of a codebase.
+- The technology that feels revolutionary and the technology that actually
+  rearranged how people live are rarely the same one.
+
+That is part two. There will probably be a part three eventually.
