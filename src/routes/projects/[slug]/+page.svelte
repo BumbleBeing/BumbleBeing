@@ -57,6 +57,9 @@
 			{#if project.report}
 				<Button variant="outline" size="sm" href={project.report}>Report (PDF)</Button>
 			{/if}
+			{#if project.video}
+				<Button variant="outline" size="sm" href={project.video}>Video Report</Button>
+			{/if}
 		</div>
 	</header>
 

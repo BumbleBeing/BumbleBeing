@@ -95,6 +95,25 @@ describe('loadCollection', () => {
 		expect(project.report).toBe('/GarbageClassificationReport.pdf');
 	});
 
+	it('rejects a video that is not a URL', () => {
+		expect(() =>
+			loadCollection({ 'a/x.svx': mod({ ...valid, video: '/walkthrough.mp4' }) }, projectSchema)
+		).toThrow(/video/);
+	});
+
+	it('accepts the optional video field', () => {
+		const [project] = loadCollection(
+			{
+				'a/bone-fracture-detector.svx': mod({
+					...valid,
+					video: 'https://youtu.be/dj5JKLea4vc'
+				})
+			},
+			projectSchema
+		);
+		expect(project.video).toBe('https://youtu.be/dj5JKLea4vc');
+	});
+
 	it('rejects entirely absent frontmatter', () => {
 		expect(() => loadCollection({ 'a/x.svx': {} }, projectSchema)).toThrow(/x\.svx/);
 	});

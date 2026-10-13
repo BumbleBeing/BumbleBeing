@@ -5,6 +5,7 @@ tags: [ml]
 tools: [Python, PyTorch, scikit-learn, Jupyter]
 date: 2025-12-07
 repo: https://github.com/BumbleBeing/ResNet-Fracture-Classifier
+video: https://youtu.be/dj5JKLea4vc?si=mrAw2nQvROYrcABy
 ---
 
 A classifier that looks at an X-ray and says whether the bone in it is broken. What

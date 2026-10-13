@@ -56,6 +56,11 @@ export const projectSchema = z.object({
 	/** A PDF in static/, standing in as the public artifact when there is no repo. */
 	report: z.string().startsWith('/').optional(),
 	/**
+	 * A hosted video walkthrough of the Project. A URL rather than a path because
+	 * the video lives on a video host; `report` is for a PDF that ships with the site.
+	 */
+	video: z.url().optional(),
+	/**
 	 * A playable build in static/, which the Project's `/play` child page embeds.
 	 * A path rather than a URL because the build ships with the site; `demo` is
 	 * for something hosted somewhere else.
