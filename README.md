@@ -44,7 +44,7 @@ blurb: A ResNet classifier that flags fractures in radiographs.
 tags: [ml] # game | ml | systems | web — closed set, see CONTEXT.md
 tools: [Python, PyTorch, Jupyter]
 date: 2025-12-07
-repo: https://github.com/Monowog/ResNet-Fracture-Classifier # optional
+repo: https://github.com/BumbleBeing/ResNet-Fracture-Classifier # optional
 demo: https://example.com # optional
 report: /GarbageClassificationReport.pdf # optional, for work with no public repo
 credit: Team project — UC Davis ECS 171 # optional, when it wasn't solo work

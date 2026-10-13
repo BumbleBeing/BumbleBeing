@@ -9,7 +9,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
 	{ href: '/JacksonCmelakResume.pdf', label: 'Résumé' },
 	{ href: 'https://www.linkedin.com/in/jackson-cmelak/', label: 'LinkedIn' },
-	{ href: 'https://github.com/Monowog', label: 'GitHub' }
+	{ href: 'https://github.com/BumbleBeing', label: 'GitHub' }
 ] as const;
 
 /**

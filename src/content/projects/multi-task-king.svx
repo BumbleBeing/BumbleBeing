@@ -4,7 +4,7 @@ blurb: A Godot 4 port of a board game I designed, where you spend a limited atte
 tags: [game]
 tools: [Godot 4, GDScript, Game Design, Graphic Design, UI Design, AI Opponents]
 date: 2026-01-20
-repo: https://github.com/Monowog/Multi-Task-King
+repo: https://github.com/BumbleBeing/Multi-Task-King
 play: /games/multi-task-king/index.html
 ---
 

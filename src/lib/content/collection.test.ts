@@ -76,7 +76,7 @@ describe('loadCollection', () => {
 
 	it('rejects a repo that is not a URL', () => {
 		expect(() =>
-			loadCollection({ 'a/x.svx': mod({ ...valid, repo: 'Monowog/thing' }) }, projectSchema)
+			loadCollection({ 'a/x.svx': mod({ ...valid, repo: 'BumbleBeing/thing' }) }, projectSchema)
 		).toThrow(/repo/);
 	});
 

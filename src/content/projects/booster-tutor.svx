@@ -4,7 +4,7 @@ blurb: A draft coach for Magic. Python works out every verdict, and the LLM only
 tags: [web]
 tools: [Python, FastAPI, PostgreSQL, SvelteKit, TypeScript]
 date: 2026-09-22
-repo: https://github.com/Monowog/BoosterTutor
+repo: https://github.com/BumbleBeing/BoosterTutor
 ---
 
 BoosterTutor is a coach for Magic: the Gathering Limited. You hand it a draft or a

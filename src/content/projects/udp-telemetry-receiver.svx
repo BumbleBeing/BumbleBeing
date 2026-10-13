@@ -4,7 +4,7 @@ blurb: A C++17 sender and receiver for a 28-byte binary format I designed, with 
 tags: [systems]
 tools: [C++17, CMake, BSD sockets]
 date: 2026-09-30
-repo: https://github.com/Monowog/udp-telemetry-receiver
+repo: https://github.com/BumbleBeing/udp-telemetry-receiver
 ---
 
 A sender and a receiver that talk to each other over UDP using a binary protocol I

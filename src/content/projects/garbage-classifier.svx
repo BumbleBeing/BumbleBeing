@@ -4,7 +4,7 @@ blurb: SVM, random forest and a CNN all sorting photos of trash into six materia
 tags: [ml]
 tools: [Python, TensorFlow, scikit-learn, Streamlit]
 date: 2023-12-07
-repo: https://github.com/Monowog/ecs171-project
+repo: https://github.com/BumbleBeing/ecs171-project
 demo: https://ecs171-group27-project.streamlit.app/
 report: /GarbageClassificationReport.pdf
 credit: Team project for UC Davis ECS 171

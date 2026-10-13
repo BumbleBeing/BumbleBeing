@@ -164,7 +164,7 @@ the deck to four once it was clear how often you want it.
 
 The digital version isn't quite a full game right now, due to me still needing to implement 'attack' activities among other things.
 However, there *are* computer opponents included, and
-you can customize the deck before you start. You could download the raw files from the <a href="https://github.com/Monowog/Multi-Task-King">GitHub repo</a>, or 
+you can customize the deck before you start. You could download the raw files from the <a href="https://github.com/BumbleBeing/Multi-Task-King">GitHub repo</a>, or 
 the executable from the <a href="https://www.bumblebeing.com/projects/multi-task-king">project page</a>. 
 What is left is mostly balance, which is the part that never really ends as it's beholden to my current design philosophy.
 
