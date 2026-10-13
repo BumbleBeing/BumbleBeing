@@ -5,8 +5,8 @@ date: 2026-10-13
 tags: [misc]
 ---
 
-The first one of these went over well enough that I kept a list going. Here are
-three more, and none of them are about software.
+I enjoyed writing the last one enough to the list going. Here are
+three more, and *gasp* none of them are about software!
 
 ## The Three Pillars of Zen
 
@@ -21,24 +21,21 @@ three more, and none of them are about software.
 	class="book-cover"
 />
 
-Kapleau was an American court reporter who covered the war crimes trials, went to
-Japan, and stayed thirteen years to train. The book he came back with is not a book
-about Zen so much as a set of primary documents. You get a teacher's lecture series
-on the actual mechanics of sitting, transcripts of private interviews between the
-teacher and his students, and then a long section of first-person accounts from
-people describing what happened to them. The interview transcripts are the part I
-keep returning to. A student arrives with a tidy intellectual account of what they
+Kapleau was an American court reporter who covered war crime trials, went to
+Japan, then stayed thirteen years to train under a monk. The book he came back with is not a book
+about Zen, so much as a set of primary documents. You get a teacher's lecture series
+on the actual mechanics of sitting, transcripts of interviews between the
+teacher and his students, and then a looong section of first-person accounts from
+people describing what happened to them. A student arrives with a tidy intellectual account of what they
 have understood, and the teacher simply declines to accept it, over and over, until
 the student stops performing. It is the least mystical book about enlightenment I
-have read, which is why it works on me.
+have ever read, which is a big reason why I find it so fascinating.
 
 Takeaways:
 
-- The posture instructions are not a warmup for the real thing, they are the thing.
-  A surprising amount of practice turns out to be logistics you were hoping to skip.
-- A clean explanation of an experience is not the experience. I notice this in code
-  reviews now, when someone describes a system beautifully and has clearly not run
-  it.
+- The posture instructions are not a warmup for the real thing, they *are* 'the thing'.
+- A clean explanation of an experience is not the experience. Life is a messy business, and as 
+Nietzsche once said about nature, there are "no exactly straight line(s), no actual circle(s)".
 
 ## Writing with Style
 
@@ -53,22 +50,21 @@ Takeaways:
 	class="book-cover"
 />
 
-Short, blunt, and the only style guide I have ever finished. Trimble's premise is
-that most bad writing is not a grammar problem, it is a courtesy problem. The writer
-is busy expressing himself and has forgotten that a stranger has to follow this
-sentence by sentence with no idea where it is going. So the book is mostly about the
+Short, punchy, and the only style guide I have ever taken to heart. Trimble's premise is
+that most bad writing isn't a grammar problem, but a courtesy problem. The writer
+is busy expressing himself and has forgotten that a stranger has to follow his prose
+sentence by sentence with no idea where it is going. So the book becomes mostly about the
 reader: how to open without clearing your throat for a paragraph, how to carry
-someone across a transition, where to put the thing you most want them to remember.
-He also spends a cheerful chapter killing the rules you were taught and never
+someone painlessly through a transition, and precisely where to put the thing you want them to remember.
+He also spent a chapter killing the rules I was taught and never
 questioned, like the one about prepositions at the end of a sentence. The advice
-holds up for commit messages and design docs, which is most of what I write.
+even holds up for commit messages and design docs!
 
 Takeaways:
 
 - Write the draft to find out what you think, then rewrite it for the person who has
-  to read it. Those are two different jobs and doing them at once produces neither.
-- If a sentence is hard to follow, that is your problem to fix, not the reader's
-  problem to push through.
+  to read it. Those are two different jobs and trying to do them simultaneously really produces neither.
+- If a sentence is hard to follow, that is *your* problem to fix, not the reader's to push through.
 
 ## 23 Things They Don't Tell You About Capitalism
 
@@ -83,22 +79,21 @@ Takeaways:
 	class="book-cover"
 />
 
-Twenty-three short chapters, each one opening with what you have been told and then
-taking it apart. Chang is a Cambridge economist and not remotely anti-capitalist,
-which is what makes the book land. He is arguing that the version of capitalism most
-people treat as the natural state of things is one design among several, assembled
-out of choices that were fought over and then forgotten. The opening chapter claims
+Twenty-three short, insightful chapters, each one opening with what you have been told and then
+elucidating why it is false. Chang is a Cambridge economist and not remotely anti-capitalist,
+which makes his points all the more salient. He is arguing that the version of capitalism most
+people treat as the 'natural state of things' is one design among several, assembled
+out of choices that were fought over, then forgotten. The opening chapter claims
 there is no such thing as a free market, and the argument is simply that every market
-already runs on rules you stopped noticing, like who is allowed to work and what may
+in reality runs on rules you never even considered were optional, like who is allowed to work and what may
 be sold at all. My favorite chapter argues the washing machine changed the world more
 than the internet did, and he is annoyingly convincing about it. You do not have to
-accept all twenty-three to come out of it reading economic claims more carefully.
+accept all twenty-three, but reading this certainly made me think about economic claims more carefully.
 
 Takeaways:
 
 - When something looks like the absence of rules, it usually means the rules are old
-  enough that everyone stopped seeing them. Same is true of a codebase.
-- The technology that feels revolutionary and the technology that actually
-  rearranged how people live are rarely the same one.
+  enough that everyone stopped seeing them.
+- The technologies that *feel* revolutionary and the technologies that actually
+  rearranged how people live are rarely the same ones.
 
-That is part two. There will probably be a part three eventually.
