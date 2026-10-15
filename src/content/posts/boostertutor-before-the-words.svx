@@ -1,0 +1,75 @@
+---
+title: BoosterTutor, Before the Words
+blurb: The draft input is done; now I'm making myself design the Claude layer before I build any of it.
+date: 2026-10-15
+tags: [web]
+---
+
+BoosterTutor just wrapped up its third phase of development, which means the part I'm most excited
+about is next: getting Claude to coherently explain a draft. Before I get there, though,
+I want to write down where things landed, because a lot changed in the last few days
+and some of it changed my mind about what v1 will even be.
+
+Quick refresher if you haven't seen the [project page](/projects/booster-tutor): the
+whole app rests on one rule. Python computes every fact and pick-verdict, while the LLM
+only explains them. If you ask a language model whether or not a pick was good, it will tell
+you, *confidently*, and you would have no idea where that answer came from. If you hand it the
+answer and ask it to explain, however, it can be genuinely useful.
+
+## One way in
+
+Phase 3 was about getting a real draft into the system and running the analysis on it.
+I ended up cutting the inputs down to exactly one: a 17Lands draft link. You paste it,
+the backend fetches that single draft's pick log and event info from 17Lands, and
+everything else happens on my side. Arena's `Player.log` input is pushed back until the rest
+of v1 exists, and I nixed MTGO support altogether. I believe the 17Lands link already covers 
+most of the people who'd actually care about a tool like this.
+
+That fetch needed its own decision record, since I'd previously written down that
+BoosterTutor never calls 17lands.com at all. That rule was really about their aggregate
+card stats, which they publish as public datasets and would rather you not scrape. A
+single user's draft is a different thing. It isn't in the public data, and it only
+exists to us at the moment someone hands over the link. So the exception is narrow:
+only on an explicit submission, one fetch per draft, never in bulk.
+
+## Reading the wheel
+
+The other big piece was wheel analysis. In a draft, the pack you open comes back to you
+eight picks later, minus whatever the other seven players took. That's a surprisingly
+rich signal. If the green cards keep coming back, green is probably open. If the good
+red cards vanish every lap, someone next to you is most likely in red.
+
+I used to try to fold this into the fitness score as an "openness" term, but it didn't work at all. 
+I rewrote it, then restricted it to pack one, but ultimately a backtest over 43,650
+real drafts fit its weight to exactly zero. Now it's retired as a score, and the wheel
+now just reports facts: what came back, what the other players at the table took, and whether those cards
+were any good. "Good" here means at or above the format's measured average win rate,
+which I like because it's a number the data hands me rather than a threshold I made up.
+Claude can say "a color is flowing" later, but it's really this script's job to determine that.
+
+## Designing Phase 4 before building it
+
+Phase 4 is the Claude integration step, and I've deliberately stopped myself from writing
+any of it yet. The plan for it was written back in August, before most of the decisions
+above, and a few things no longer line up.
+
+The biggest one is what a review says when nothing went wrong. Under the current
+grading rules, only a `mistake` earns a written note. I ran a real Hobbit draft through
+the pipeline and it came back with 34 solid picks, 5 indifferent ones, 3 questionable,
+and *zero* mistakes. That sounds like a perfectly reasonable draft! But the old plan assumed a blurb
+for every pick, batched into a call per pack plus a summary, and now I'm not sure any of
+that batching is what I actually want. I need to figure out what the review should actually tell
+someone who drafted well, which is what I'll do today.
+
+There's also some plumbing issues. The analysis only knows cards by their oracle IDs, so
+something has to look up the names, mana costs and rarity before a prompt gets built, and
+that step needs a sensible home between the pure analysis code and everything that
+touches the database. I also want an eval that fails if Claude ever writes a number that
+wasn't in its brief, which means I have to be careful about how numbers get formatted
+going in. If the brief says 2.1pp and Claude says 2%, is that invented? I'd rather
+decide that now than argue with a test later.
+
+Finally, I recently decided that anonymous visitors get the full Python analysis but
+no Claude calls at all, and accounts don't arrive until Phase 6. So Phase 4 is probably a
+module plus an eval harness with no user-facing endpoint, which honestly feels right.
+ I'll write the next one once that design is settled.
